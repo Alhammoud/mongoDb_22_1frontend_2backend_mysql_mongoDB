@@ -1,0 +1,3 @@
+- create a second backend for your current mysql powered frontend
+- copy the seedsscript to it and provide a senseful folder structure
+- make that the frontend use both databases. So that you can create a post in the mysql, and with another button create a post in mongodb. One frontend - connected to two backends

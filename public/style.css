@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 120px;
+    width: 1200px;
+    margin: 0 auto 5px auto;
+    border: 1px solid black;
+    background-image: linear-gradient(rgb(132, 0, 255), rgb(130, 167, 61));
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.header h2 {
+    color: darkslategrey;
+    text-shadow: 2px 2px whitesmoke;
+}
+
+.navbar {
+    margin-top: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navlinks {
+    text-decoration: unset;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 5px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-image: linear-gradient(rgb(132, 0, 255), rgb(118, 187, 166));
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 10px;
+    min-height: 500px;
+}
+
+.content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.content input,
+.content button {
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.content table {
+    min-width: 50%;
+    background: whitesmoke;
+    color: darkslategray;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: left;
+    padding: 5px;
+}
+
+.content table th, .content table td {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.content img {
+    display: block;
+    margin: 0 auto;
+}
+
+.content a {
+    color: black;
+}
+
+.profile {
+    display: flex;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.profile-pic img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 250px;
+}
+
+.profile-description {
+    width: 70%;
+    text-align: center;
+    color: darkslategray;
+    
+}
+.profile-description h3 {
+text-shadow: 2px 2px whitesmoke;
+}
+
+.profile-description table {
+    background: transparent;
+    border-style: none;
+    color: whitesmoke;
+}
+
+.profile-description td {
+    vertical-align: top;
+}
+
+.hover {
+    cursor: pointer;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.addUser {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addUserLeft,
+.addUserRight {
+    margin: 0 20px;
+    width: 100%;
+}
+
+.addUserLeft textarea,
+.addUserLeft input,
+.addUserRight input {
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.addUser button {
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    min-width: 80%;
+    cursor: pointer;
+}
+
+#pictureUpload {
+    padding-top: 15px;
+    font-size: 25px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.profilePicHeadline {
+    margin-top: 50px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 50px;
+    color: darkslategray;
+
+}
