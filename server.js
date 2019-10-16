@@ -76,17 +76,16 @@ mongoose.connect(process.env.MONGOURL, {
 });
 
 app.get('/blogposts_mongo_db', async (req, res) => {
-  
+
     const found = await Post.find() // finde() ist ein mongoose methode
-    return res.send(found);
+    res.send(found);
 
 })
-
 
 app.post('/blogpostmongodb', async (req, res) => {
 
     if (!(req.body.title || req.body.content)) {
-        return res.send({
+        res.send({
             error: 'Titel and content required'
         });
     }
@@ -98,8 +97,59 @@ app.post('/blogpostmongodb', async (req, res) => {
 });
 
 
+app.get('/:post_id', async (req, res) => {
+
+    console.log('req.params.post_id', req.params.post_id);
+
+    const found = await Post.findById(req.params.post_id);
+
+    res.json(found);
+});
 
 
+// UPDATE DOC
+
+/* app.post('/:post_id', async (req, res) => {
+    const found = await Post.findById(req.params.post_id)
+      await found.update(req.body);
+    return res.json(found);
+}); */
+
+// app.post('/:post_id', async (req, res) => {
+// const found = await Post.findById(req.params.post_id)
+// const found = await Post.findByIdAndUpdate(req.params.post_id, req.body);
+// const updatedPost = await found.update(req.body);
+// console.log( 'req.body',  req.body);
+// console.log('found',found);
+// console.log('await Post.findByIdAndUpdate(req.params.post_id, req.body)',await Post.findByIdAndUpdate(req.params.post_id, req.body));
+// return res.json(await Post.findById(req.params.post_id));
+//  return res.json(req.body);
+// })
+
+
+/* app.post('/:post_id', async (req, res) => {
+    return res.json(await Post.findByIdAndUpdate(req.params.post_id, req.body,{new: true}));
+}) */
+
+app.put('/:post_id', async (req, res) => {
+
+    /* const post = await Post.findByIdAndUpdate(req.params.post_id, req.body);
+    req.json(post); */
+
+    res.json(await Post.findByIdAndUpdate(req.params.post_id, req.body, {
+        new: true
+    }));
+});
+
+
+
+
+// DELETE
+app.delete('/:post_id', async (req, res) => {
+
+    await Post.findByIdAndRemove(req.params.post_id);
+    res.json(`Post  #${req.params.post_id} deleted`);
+});
 
 
 console.log('Hallo World from Backend.');

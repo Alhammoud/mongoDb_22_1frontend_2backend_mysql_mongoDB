@@ -1,0 +1,9 @@
+install and use nodemon
+Optional:
+-  console.log(":+1: Done! Successfully Fetching data\n");
+-  console.log(":-1: Error! The Error info is below !!!\n");
+TODO:
+- implement the UD from CRUD
+- Update: POST /:post_id search a post with findById and update by req.body
+- Delete: DELETE /:post_id and look for the smartest way to delete one (bearbeitet) 
+
