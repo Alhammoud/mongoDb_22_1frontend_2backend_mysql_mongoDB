@@ -2,16 +2,22 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: 
 }
 
 .header {
     height: 120px;
     width: 1200px;
-    margin: 10px auto 5px auto;
-    border: 1px solid black;
+    margin: 15px auto 10px auto;
+    border: 10px solid rgb(228, 245, 0);
+    border-block-end-style: double;
+    /* border-style: outset; */
+    border-style: double ;
     border-radius: 25px;
-    background-image: linear-gradient(rgb(132, 0, 255), rgb(130, 167, 61));
-    color: whitesmoke;
+   /*  background-image: linear-gradient(rgb(132, 0, 255), rgb(130, 167, 61)); */
+    /* background-color: #3333cc; */
+    background: linear-gradient(to top right, #ffff99 0%, #3333cc 100%);
+    color: #cc00cc;
     font-size: 20px;
     padding: 10px;
 }
@@ -38,7 +44,7 @@
 
 .navlinks {
     text-decoration: unset;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     display: inline-block;
     padding: 5px;
 }
@@ -46,9 +52,13 @@
 .container {
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 10px solid rgb(228, 245, 0);
+    border-block-end-style: double;
+    /* border-style: outset; */
+    border-style: double ;
     border-radius: 25px;
-    background-image: linear-gradient(rgb(132, 0, 255), rgb(118, 187, 166));
+    /* background-image: linear-gradient(rgb(0, 153, 255), rgb(246, 250, 23)); */
+    background: linear-gradient(to top right, #ffff99 0%, #3333cc 100%);
     color: whitesmoke;
     font-size: 25px;
     padding: 10px;
@@ -101,8 +111,10 @@
     margin: 10px;
     padding: 10px;
     border-radius: 25px;
-    background-image: linear-gradient(rgb(219, 24, 144), rgb(226, 152, 68));
+    background: linear-gradient(to bottom, #ffffff 0%, #666699 100%);
     /* margin: 0 auto; */
+    color: black;
+
 }
 .post h4{
     text-align: center;
